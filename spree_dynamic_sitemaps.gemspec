@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.version     = '0.50.1'
   s.summary     = 'Google sitemap for Spree stores'
   #s.description = 'Add (optional) gem description here'
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 2.0.0'
 
   s.author            = 'bzt'
   # s.email             = ''
