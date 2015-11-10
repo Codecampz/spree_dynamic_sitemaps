@@ -40,7 +40,7 @@ class SitemapController < Spree::BaseController
           end
         end
 
-        Spree::Product.active.where(deleted: nil).each do |product|
+        Spree::Product.active.where(deleted_at: nil).each do |product|
           v = _build_product_hash(product)
           xml.url {
             xml.loc         public_dir + v['link']
