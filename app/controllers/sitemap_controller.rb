@@ -66,7 +66,7 @@ class SitemapController < Spree::BaseController
   def _build_product_hash(product)
     pinfo             = {}
     pinfo['name']     = product.name
-    pinfo['link']     = 'products/' + product.permalink # primary
+    pinfo['link']     = 'products/' + product.slug # primary
     pinfo['updated']  = product.updated_at
     pinfo
   end
